@@ -14,8 +14,12 @@
         <img src="./assets/images/logo.webp" alt="logo" class="logo">
       </a>
       <form>
-        <i class="ri-search-line search-icon"></i>
-        <input type="text" name="search" id="search" placeholder="search">
+        <div class="input">
+          <i class="ri-search-line search-icon"></i>
+          <input type="text" name="search" id="search" placeholder="search">
+        </div>
+        <div class="suggestions">
+        </div>
       </form>
       <details>
         <summary>
@@ -23,20 +27,12 @@
           <i class="ri-arrow-down-s-line arrow-icon"></i>
         </summary>
         <ul class="list">
-          <li class="l theme">Switch Theme</li>
-          <li class="l logout">Log out</li>
+          <button class="l logout" onclick="window.close()">Close</button>
         </ul>
       </details>
     </header>
+    <div class="overlay"></div>
     <main>
-      <img src="https://i.pinimg.com/236x/64/11/9b/64119b15e41f962e266fdc7719d67929.jpg" alt="">
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhqEd9PmQR5riUAiyKMRBcn4eQRkqMs1IsoQ&s" alt="">
-      <img src="https://i.pinimg.com/236x/64/11/9b/64119b15e41f962e266fdc7719d67929.jpg" alt="">
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhqEd9PmQR5riUAiyKMRBcn4eQRkqMs1IsoQ&s" alt="">
-      <img src="https://i.pinimg.com/236x/64/11/9b/64119b15e41f962e266fdc7719d67929.jpg" alt="">
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhqEd9PmQR5riUAiyKMRBcn4eQRkqMs1IsoQ&s" alt="">
-      <img src="https://i.pinimg.com/236x/64/11/9b/64119b15e41f962e266fdc7719d67929.jpg" alt="">
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhqEd9PmQR5riUAiyKMRBcn4eQRkqMs1IsoQ&s" alt="">
     </main>
     <script src="./scripts/script.js"></script>
   </body>

@@ -24,3 +24,42 @@ let images = [
   {name: "Mahakali", image: "https://images.unsplash.com/photo-1622598661631-3a46559a4817?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"},
   {name: "Night sky", image: "https://images.unsplash.com/photo-1768676972929-88f7b61b98e1?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"},
 ]
+
+function showImages() {
+  let clutter = "";
+  images.forEach(function(obj) {
+    clutter += `
+      <picture class="${obj.name}">
+        <img src="${obj.image}" alt="${obj.name}" class="image">
+        <p class="caption">${obj.name}</p>
+      </picture>`;
+  })
+  document.querySelector("main").innerHTML = clutter;
+}
+
+function searchFunc() {
+  let input = document.querySelector("input");
+  input.addEventListener("focus", () => {
+    document.querySelector(".overlay").style.display = "block";
+  })
+  input.addEventListener("blur", () => {
+    document.querySelector(".overlay").style.display = "none";
+    document.querySelector(".suggestions").style.display = "none";
+  })
+  input.addEventListener("input", () => {
+    const filteredArray = images.filter(obj => obj.name.toLowerCase().startsWith(input.value));
+    let clutter = "";
+    filteredArray.forEach(function(obj) {
+      clutter += `
+        <div class="suggestion">
+          <i class="ri-search-line"></i>
+          <p class="suggestion-txt">${obj.name}</p>
+        </div>`;
+    })
+    document.querySelector(".suggestions").style.display = "flex";
+    document.querySelector(".suggestions").innerHTML = clutter;
+  })
+}
+
+searchFunc();
+showImages();
