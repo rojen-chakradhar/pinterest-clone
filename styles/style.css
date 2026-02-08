@@ -23,7 +23,7 @@ header {
   display: flex;
   align-items: center;
   gap: 10px;
-  padding: 10px 1vw;
+  padding: 10px;
   background-color: #222;
 }
 
@@ -97,4 +97,15 @@ summary {
   &:hover {
     background-color: #aaa;
   }
+}
+
+main {
+  columns: 6;
+  column-gap: 10px;
+  padding: 10px;
+}
+
+main img {
+  border-radius: 10px;
+  object-fit: cover;
 }
