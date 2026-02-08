@@ -3,11 +3,31 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pinterest</title>
+    <title>Rinterest</title>
+    <link rel="shortcut icon" href="./assets/images/logo.webp" type="image/x-icon">
     <link rel="stylesheet" href="./styles/style.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
   </head>
   <body>
+    <header>
+      <a href="#">
+        <img src="./assets/images/logo.webp" alt="logo" class="logo">
+      </a>
+      <form>
+        <i class="ri-search-line search-icon"></i>
+        <input type="text" name="search" id="search" placeholder="search">
+      </form>
+      <details>
+        <summary>
+          <img src="./assets/images/pfp.png" alt="pfp" class="pfp">
+          <i class="ri-arrow-down-s-line arrow-icon"></i>
+        </summary>
+        <ul class="list">
+          <li class="l theme">Switch Theme</li>
+          <li class="l logout">Log out</li>
+        </ul>
+      </details>
+    </header>
     <main>
     </main>
     <script src="./scripts/script.js"></script>

@@ -9,7 +9,7 @@
   scroll-behavior: smooth;
   /*outline: 1px dotted red;*/
   font-family: "Poppins", sans-serif;
-  font-weight: 500;
+  font-weight: 400;
   font-style: normal;
 }
 
@@ -19,3 +19,82 @@ body {
   width: 100%;
 }
 
+header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 1vw;
+  background-color: #222;
+}
+
+.logo,
+.pfp {
+  width: 32px;
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  cursor: pointer;
+}
+
+form {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 5px 10px;
+  border: 1px solid #eee;
+  border-radius: 20px;
+  background-color: #eee;
+}
+
+.search-icon, .arrow-menu {
+  font-size: 16px;
+  color: #222;
+}
+
+input {
+  flex: 1;
+  border: none;
+  font-size: 16px;
+  color: #222;
+  background-color: transparent;
+  cursor: text;
+  &:focus {
+    outline: none;
+  }
+  &::placeholder {
+    text-transform: capitalize;
+    color: #222;
+  }
+}
+
+summary {
+  display: flex;
+  align-items: center;
+  padding: 2px;
+  border: 1px solid #eee;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.list {
+  position: absolute;
+  right: 1vw;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #ddd;
+}
+
+.l {
+  padding: 0 5px;
+  color: #111;
+  background-color: #ddd;
+  cursor: pointer;
+  &:hover {
+    background-color: #aaa;
+  }
+}
