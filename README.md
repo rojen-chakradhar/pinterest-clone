@@ -8,14 +8,14 @@ Making few functionalities of pinterest.
 
 ## Instruction
 - Open any browser
-- Search rinterest.netlify.app
+- Search rinterest-r.netlify.app
 - The site is opened
 
 ### If you want to get code
 - Open github
 - Search rojen-chakradhar
 - Go to repo
-- Find pinterest
+- Find pinterest-clone
 - Clone the repo
 - Run the index.html file
 - The site is open
@@ -27,4 +27,4 @@ Making few functionalities of pinterest.
 - Image come from array and not manually html
 
 ## Live demo
-[click me](https://rinterest.netlify.app)
+[click me](https://rinterest-r.netlify.app)

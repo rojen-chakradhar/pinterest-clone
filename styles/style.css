@@ -143,7 +143,7 @@ summary {
 main {
   width: 100%;
   margin: auto;
-  columns: 5;
+  columns: 6;
   column-gap: 10px;
   padding: 10px;
 }
@@ -180,4 +180,39 @@ picture img {
 .caption {
   font-size: 14px;
   color: #222;
+}
+
+@media  (max-width: 1427px) {
+  main {
+    column-gap: 5;
+    width: calc(100% - 40px);
+  }
+}
+
+@media (max-width: 1200px) {
+  main {
+    columns: 4;
+  }
+}
+
+@media (max-width: 1000px) {
+  main {
+    columns: 3;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+}
+
+@media (max-width: 786px) {
+  main {
+    columns: 2;
+  }
+}
+
+@media (max-width: 480px) {
+  main {
+    columns: 1;
+  }
 }
